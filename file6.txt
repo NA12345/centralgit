@@ -1,0 +1,684 @@
+
+Vivek Singh@Vivek MINGW64 ~
+$ git --versions
+unknown option: --versions
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Vivek Singh@Vivek MINGW64 ~
+$ git version
+git version 2.39.1.windows.1
+
+Vivek Singh@Vivek MINGW64 ~
+$ git config --global user.name "vivek"
+
+Vivek Singh@Vivek MINGW64 ~
+$ git config --global user.email "vivek@gmail.com"
+
+Vivek Singh@Vivek MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/Vivek Singh/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=vivek
+user.email=vivek@gmail.com
+
+Vivek Singh@Vivek MINGW64 ~
+$
+
+Vivek Singh@Vivek MINGW64 ~
+$ ls
+'!!!!!1772160984.db'
+'!!!!!1972977940.jpg'
+'!!!!!2453706441.doc'
+'!!!!!2935554590.pps'
+'!!!!!3456623398.db'
+'!!!!!357435166.xls'
+'!!!!!3583941163.jpg'
+'!!!!!3766977136.pps'
+'!!!!!4131824111.xls'
+'!!!!!4137838750.doc'
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ OpenVPN/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ SqlAssessmentHistory/
+ SqlAssessmentReport_20230530133531.html
+ SqlAssessmentReport_202305310250748.html
+'Start Menu'@
+ Templates@
+ Tracing/
+ Videos/
+ XORXOR1048127701.png
+ XORXOR1159848392.png
+ XORXOR1427670089.txt
+ XORXOR1797266485.xlsx
+ XORXOR3201662041.pptx
+ XORXOR3269137980.pptx
+ XORXOR4118975204.pst
+ XORXOR594066076.xlsx
+ XORXOR657521055.txt
+ XORXOR661500381.pst
+ ZZZZZ1010401893.pem
+ ZZZZZ1208911795.avi
+ ZZZZZ124472828.eml
+ ZZZZZ129687484.ppt
+ ZZZZZ1329333428.doc
+ ZZZZZ1684436507/
+ ZZZZZ1805853848/
+ ZZZZZ2792193916.eml
+ ZZZZZ3855526249.pem
+ ZZZZZ4188759791.avi
+ ZZZZZ487068128.doc
+ ZZZZZ981290445.ppt
+ html/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ oxRbA1130436000.pdf
+ oxRbA1412235050.sql
+ oxRbA1424538344.bmp
+ oxRbA203666860.mdb
+ oxRbA2476734409.pdf
+ oxRbA2548634682.docx
+ oxRbA2725251726.sql
+ oxRbA3915722252.bmp
+ oxRbA794280142.docx
+ oxRbA974971827.mdb
+
+Vivek Singh@Vivek MINGW64 ~
+$
+
+Vivek Singh@Vivek MINGW64 ~
+$ which git
+/mingw64/bin/git
+
+Vivek Singh@Vivek MINGW64 ~
+$ ls
+'!!!!!1772160984.db'
+'!!!!!1972977940.jpg'
+'!!!!!2453706441.doc'
+'!!!!!2935554590.pps'
+'!!!!!3456623398.db'
+'!!!!!357435166.xls'
+'!!!!!3583941163.jpg'
+'!!!!!3766977136.pps'
+'!!!!!4131824111.xls'
+'!!!!!4137838750.doc'
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ OpenVPN/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ SqlAssessmentHistory/
+ SqlAssessmentReport_20230530133531.html
+ SqlAssessmentReport_202305310250748.html
+'Start Menu'@
+ Templates@
+ Tracing/
+ Videos/
+ XORXOR1048127701.png
+ XORXOR1159848392.png
+ XORXOR1427670089.txt
+ XORXOR1797266485.xlsx
+ XORXOR3201662041.pptx
+ XORXOR3269137980.pptx
+ XORXOR4118975204.pst
+ XORXOR594066076.xlsx
+ XORXOR657521055.txt
+ XORXOR661500381.pst
+ ZZZZZ1010401893.pem
+ ZZZZZ1208911795.avi
+ ZZZZZ124472828.eml
+ ZZZZZ129687484.ppt
+ ZZZZZ1329333428.doc
+ ZZZZZ1684436507/
+ ZZZZZ1805853848/
+ ZZZZZ2792193916.eml
+ ZZZZZ3855526249.pem
+ ZZZZZ4188759791.avi
+ ZZZZZ487068128.doc
+ ZZZZZ981290445.ppt
+ html/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ oxRbA1130436000.pdf
+ oxRbA1412235050.sql
+ oxRbA1424538344.bmp
+ oxRbA203666860.mdb
+ oxRbA2476734409.pdf
+ oxRbA2548634682.docx
+ oxRbA2725251726.sql
+ oxRbA3915722252.bmp
+ oxRbA794280142.docx
+ oxRbA974971827.mdb
+
+Vivek Singh@Vivek MINGW64 ~
+$
+
+Vivek Singh@Vivek MINGW64 ~
+$ mkdir mumbaigit
+
+Vivek Singh@Vivek MINGW64 ~
+$ ls
+'!!!!!1772160984.db'
+'!!!!!1972977940.jpg'
+'!!!!!2453706441.doc'
+'!!!!!2935554590.pps'
+'!!!!!3456623398.db'
+'!!!!!357435166.xls'
+'!!!!!3583941163.jpg'
+'!!!!!3766977136.pps'
+'!!!!!4131824111.xls'
+'!!!!!4137838750.doc'
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ OpenVPN/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ SqlAssessmentHistory/
+ SqlAssessmentReport_20230530133531.html
+ SqlAssessmentReport_202305310250748.html
+'Start Menu'@
+ Templates@
+ Tracing/
+ Videos/
+ XORXOR1048127701.png
+ XORXOR1159848392.png
+ XORXOR1427670089.txt
+ XORXOR1797266485.xlsx
+ XORXOR3201662041.pptx
+ XORXOR3269137980.pptx
+ XORXOR4118975204.pst
+ XORXOR594066076.xlsx
+ XORXOR657521055.txt
+ XORXOR661500381.pst
+ ZZZZZ1010401893.pem
+ ZZZZZ1208911795.avi
+ ZZZZZ124472828.eml
+ ZZZZZ129687484.ppt
+ ZZZZZ1329333428.doc
+ ZZZZZ1684436507/
+ ZZZZZ1805853848/
+ ZZZZZ2792193916.eml
+ ZZZZZ3855526249.pem
+ ZZZZZ4188759791.avi
+ ZZZZZ487068128.doc
+ ZZZZZ981290445.ppt
+ html/
+ mumbaigit/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ oxRbA1130436000.pdf
+ oxRbA1412235050.sql
+ oxRbA1424538344.bmp
+ oxRbA203666860.mdb
+ oxRbA2476734409.pdf
+ oxRbA2548634682.docx
+ oxRbA2725251726.sql
+ oxRbA3915722252.bmp
+ oxRbA794280142.docx
+ oxRbA974971827.mdb
+
+Vivek Singh@Vivek MINGW64 ~
+$ cd mumbaigit
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit
+$ git init
+Initialized empty Git repository in C:/Users/Vivek Singh/mumbaigit/.git/
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ cat >mumbai1
+dil ke valume
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ cat mumbai1
+dil ke valume
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mumbai1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mumbai1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git add .
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   mumbai1
+
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git commit -m "my first commit from mumbai"
+[master (root-commit) ffd9001] my first commit from mumbai
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mumbai1
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git log
+commit ffd9001e271704024cd37a8d4fbff2f54ee4994b (HEAD -> master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:34:59 2023 +0530
+
+    my first commit from mumbai
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git show^C
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git show ffd9001e2
+commit ffd9001e271704024cd37a8d4fbff2f54ee4994b (HEAD -> master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:34:59 2023 +0530
+
+    my first commit from mumbai
+
+diff --git a/mumbai1 b/mumbai1
+new file mode 100644
+index 0000000..0def00b
+--- /dev/null
++++ b/mumbai1
+@@ -0,0 +1 @@
++dil ke valume
+\ No newline at end of file
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git remore add origin https://github.com/NA12345/centralgit.git
+git: 'remore' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git remote add origin https://github.com/NA12345/centralgit.git
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 225 bytes | 225.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NA12345/centralgit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ cat >mumbai1
+google.com
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mumbai1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git add .
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git log
+commit ffd9001e271704024cd37a8d4fbff2f54ee4994b (HEAD -> master, origin/master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:34:59 2023 +0530
+
+    my first commit from mumbai
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git commit -m "my 2nd code commit from mumbai"
+[master 811cf45] my 2nd code commit from mumbai
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git log
+commit 811cf45db68552103e69dc67ee941394fcaa644a (HEAD -> master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:46:53 2023 +0530
+
+    my 2nd code commit from mumbai
+
+commit ffd9001e271704024cd37a8d4fbff2f54ee4994b (origin/master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:34:59 2023 +0530
+
+    my first commit from mumbai
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 253 bytes | 253.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NA12345/centralgit.git
+   ffd9001..811cf45  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git show ffd9001e2^C
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git show 811cf45
+commit 811cf45db68552103e69dc67ee941394fcaa644a (HEAD -> master, origin/master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:46:53 2023 +0530
+
+    my 2nd code commit from mumbai
+
+diff --git a/mumbai1 b/mumbai1
+index 0def00b..699c65c 100644
+--- a/mumbai1
++++ b/mumbai1
+@@ -1 +1 @@
+-dil ke valume
+\ No newline at end of file
++google.com
+\ No newline at end of file
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ cd ..
+
+Vivek Singh@Vivek MINGW64 ~
+$ cd mumbaigit
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ vi .gitignore
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ cat .getignore
+cat: .getignore: No such file or directory
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git add .gitignore
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git commit -m "ignore file formate"
+[master e5a5d98] ignore file formate
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ touch file1.txt file2.txt file3.java file4.css file5.java
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ ls
+file1.txt  file2.txt  file3.java  file4.css  file5.java  mumbai1
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+        file2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git add ..
+fatal: ..: '..' is outside repository at 'C:/Users/Vivek Singh/mumbaigit'
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git add .
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file1.txt
+        new file:   file2.txt
+
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git commit -m "ignore java and css file"
+[master 6aaf12c] ignore java and css file
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git log
+commit 6aaf12c9885cbeea26fce0ba502cb6532b2ffe3e (HEAD -> master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 17:00:21 2023 +0530
+
+    ignore java and css file
+
+commit e5a5d983ac8b1df6154febfa2a1787038f82e222
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:57:02 2023 +0530
+
+    ignore file formate
+
+commit 811cf45db68552103e69dc67ee941394fcaa644a (origin/master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:46:53 2023 +0530
+
+    my 2nd code commit from mumbai
+
+commit ffd9001e271704024cd37a8d4fbff2f54ee4994b
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:34:59 2023 +0530
+
+    my first commit from mumbai
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ ^C
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git show 6aaf12c98
+commit 6aaf12c9885cbeea26fce0ba502cb6532b2ffe3e (HEAD -> master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 17:00:21 2023 +0530
+
+    ignore java and css file
+
+diff --git a/file1.txt b/file1.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..e69de29
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git log -grep "ignore"
+fatal: ambiguous argument 'ignore': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git log --grep "ignore"
+commit 6aaf12c9885cbeea26fce0ba502cb6532b2ffe3e (HEAD -> master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 17:00:21 2023 +0530
+
+    ignore java and css file
+
+commit e5a5d983ac8b1df6154febfa2a1787038f82e222
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:57:02 2023 +0530
+
+    ignore file formate
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$ git log --grep "commit"
+commit 811cf45db68552103e69dc67ee941394fcaa644a (origin/master)
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:46:53 2023 +0530
+
+    my 2nd code commit from mumbai
+
+commit ffd9001e271704024cd37a8d4fbff2f54ee4994b
+Author: vivek <vivek@gmail.com>
+Date:   Fri Jul 7 16:34:59 2023 +0530
+
+    my first commit from mumbai
+
+Vivek Singh@Vivek MINGW64 ~/mumbaigit (master)
+$
+-----this is remove git ignore
